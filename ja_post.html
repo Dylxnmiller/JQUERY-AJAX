@@ -17,7 +17,7 @@
 				e.preventDefault();
 				var formData = $(this).serialize();
 				$.post('include/critter_handler.php', formData, function(data) {	
-					//alert(data);  //here's an alert if you wish to see the data upon return
+			//alert(data);  //here's an alert if you wish to see the data upon return
 					$('#myDiv').html(data); //upon return load data into myDiv
 				}, 'html');
 			});
